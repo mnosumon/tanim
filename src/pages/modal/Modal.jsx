@@ -61,7 +61,9 @@ const Modal = ({ setShow, show }) => {
             </div>
           </div>
         </div>
-        {image && <CropModal setShow={setShow} />}
+        {image && (
+          <CropModal setShow={setShow} cropperRef={cropperRef} image={image} />
+        )}
       </div>
     </>
   );
